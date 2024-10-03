@@ -1,0 +1,11 @@
+•	Revision 1.17  2015/11/09 18:00:00  mreuter
+•	release mxbet2.6.1
+•	changed BOOTTIME (SENSOR_BOOTTIME) to config switch -> default 5000ms if no value@cfg file
+•	bugfix changed function BET_GetSensorInfo to get the complete sensor PartNumber to (string pProdNumber) -> Datentyp nach String geändert 
+•	changed struct SensorInfo_t (string prodNumber)
+•	added request in function BET_Testbumper to check if the function SET_BumperType was called -> vor dem CALL BET_Testbumper muss ein CALL SetBumperType mit beliebigen Parametern erfolgen, damit Log-Informationen korrekt geschrieben werden
+•	bugfix changed UDS_Init_Done request handling in function BET_Testbumper to write all information in logfile(fastPing active)
+•	added VIN-EEprom-Reset and CRASHEREIGN-EEorm-Reset
+•	added Error Handling ERR_VOLTAGE_INTERNAL – Fault (23) -> Fehlerauswertung erweitert 
+
+
